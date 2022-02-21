@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "cammiescosmetics",
+	"version": "${version}",
+	"name": "Cammie's Cosmetics",
+	"description": "Contains all the cosmetics for my donators!",
+	"authors": ["Cammie"],
+	"license": "Cammie's Corner Mod License",
+	"icon": "assets/cammiescosmetics/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"dev.cammiescorner.cammiescosmetics.client.CammiesCosmeticsClient"
+		],
+		"main": [
+			"dev.cammiescorner.cammiescosmetics.CammiesCosmetics"
+		],
+		"modmenu": [
+			"dev.cammiescorner.cammiescosmetics.integration.CammiesCosmeticsModMenu"
+		]
+	},
+	"mixins": [
+		"cammies-cosmetics.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.13.1",
+		"fabric": "*",
+		"cloth-config2": ">=6.2.57",
+		"minecraft": "1.18.x"
+	}
+}
